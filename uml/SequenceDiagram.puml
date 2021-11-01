@@ -1,0 +1,58 @@
+@startuml
+
+'UCF COP3330 Fall 2021 Assignment 4 Solution
+'Copyright 2021 Quinn Barber
+
+note "ToDoList.fxml Starts" as note1
+note "GUI.fxml/Error.fxml Accessible Through Functions" as note2
+
+App --> FXMLController
+FXMLController --> ToDoList
+ToDoList *-> Item
+FXMLController --> Item
+
+class App{
+    +myLauncher
+    +start
+}
+
+class FXMLController{
+Controls All GUI Functions
+
+*Buttons
+*Labels
+*Tables
+*TableColumns
+*TextFields
+
++addItems
++addList
++openList
++editList
++delList
++delItem
++displayAll
++displayComplete
++displayIncomplete
++markComplete
++saveList
++saveLists
++loadList
++loadLists
+}
+
+class ToDoList{
++EditToDoList
+-Setters
+-Getters
+}
+
+class Item{
+-Setters
+-Getters
+}
+
+App . note1
+FXMLController . note2
+
+@enduml
