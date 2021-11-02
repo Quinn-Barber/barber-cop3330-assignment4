@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.FXMLController">
    <children>
-      <TableView fx:id="tab" layoutY="61.0" prefHeight="295.0" prefWidth="600.0">
+      <TableView fx:id="tab" layoutY="87.0" prefHeight="269.0" prefWidth="600.0">
         <columns>
           <TableColumn fx:id="descriptionColumn" prefWidth="352.0" text="Item Description" />
           <TableColumn fx:id="duedateColumn" minWidth="0.0" prefWidth="143.0" text="Due Date" />
@@ -26,7 +26,6 @@
             <items>
               <MenuItem mnemonicParsing="false" text="Open" />
                   <MenuItem mnemonicParsing="false" text="Save As..." />
-                  <MenuItem mnemonicParsing="false" text="Back" />
             </items>
           </Menu>
         </menus>
@@ -43,8 +42,11 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="498.0" layoutY="31.0" mnemonicParsing="false" text="Mark Complete" />
-      <Button layoutX="453.0" layoutY="31.0" mnemonicParsing="false" text="Edit" />
-      <Button layoutX="394.0" layoutY="31.0" mnemonicParsing="false" text="Delete" />
+      <Button layoutX="65.0" layoutY="31.0" mnemonicParsing="false" text="Mark Complete" />
+      <Button layoutX="14.0" layoutY="31.0" mnemonicParsing="false" text="Edit" />
+      <Button layoutX="536.0" layoutY="31.0" mnemonicParsing="false" text="Delete" />
+      <Button layoutX="14.0" layoutY="60.0" mnemonicParsing="false" text="Show Complete" />
+      <Button layoutX="269.0" layoutY="60.0" mnemonicParsing="false" text="Show All" />
+      <Button layoutX="480.0" layoutY="60.0" mnemonicParsing="false" text="Show Incomplete" />
    </children>
 </AnchorPane>
